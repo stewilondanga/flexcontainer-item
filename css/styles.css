@@ -269,11 +269,11 @@ pre code {
   color: #cd6a51;
 }
 
-/*.language-css .token.punctuation {
+.language-css .token.punctuation {
   color: white;
 }
 
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
