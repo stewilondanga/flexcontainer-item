@@ -228,10 +228,11 @@ pre {
   min-width: 100%;
 }
 
-/*pre[rel] {
+pre[rel] {
   padding-top: 28px;
 }
-pre[rel]::before {
+
+/*pre[rel]::before {
   font-size: 0.75rem;
   content: attr(rel);
   color: white;
