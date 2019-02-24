@@ -211,23 +211,24 @@ nav nav ul li:hover>ul {
   }
 }
 
-/*pre {
+pre {
   clear: both;
   color: white;
   background: rgba(0, 0, 0, 0.85);
   padding: 0;
   -moz-tab-size: 2;
-    -o-tab-size: 2;
-       tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
   word-break: normal;
   -webkit-hyphens: none;
-      -ms-hyphens: none;
-          hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
   position: relative;
   line-height: 28px;
   min-width: 100%;
 }
-pre[rel] {
+
+/*pre[rel] {
   padding-top: 28px;
 }
 pre[rel]::before {
