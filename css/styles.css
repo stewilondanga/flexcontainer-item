@@ -103,13 +103,14 @@ nav nav ul ul {
   display: none;
 }
 
-/*@media (min-width: 800px) {
+@media (min-width: 800px) {
   nav nav ul ul {
     display: none;
     position: absolute;
   }
 }
-nav nav ul li:hover > ul {
+
+/*nav nav ul li:hover > ul {
   display: block;
   color: #fff;
   padding-left: 2rem;
