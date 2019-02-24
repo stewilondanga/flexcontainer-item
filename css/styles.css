@@ -78,10 +78,11 @@ nav a {
   transition: all .5s ease;
 }
 
-/*nav a:hover {
+nav a:hover {
   color: #903749;
 }
-nav li {
+
+/*nav li {
   display: inline-block;
 }
 @media (min-width: 800px) {
