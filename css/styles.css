@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -8,7 +8,7 @@ body {
 
 .my_social {
   position: absolute;
-  top: 25px;
+  top: 75px;
   left: 25px;
 }
 
@@ -19,6 +19,236 @@ body {
 
 .my_social a img {
   height: 1.5em;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+body {
+  background-color: #E84545;
+  color: #53354A;
+  font-family: 'Oswald', sans-serif;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: block;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3em;
+  padding: 3em 0 1em 0;
+}
+
+h2 {
+  font-size: 2em;
+  padding: 1em 0 1em 0;
+}
+
+.navBar {
+  background-color: rgba(82, 53, 74, 0.7);
+  position: fixed;
+  min-width: 100%;
+}
+
+.logo {
+  background-color: #E84545;
+  border-radius: 50px;
+  display: inline-block;
+  height: 45px;
+  margin: 1em 0;
+  width: 45px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 2%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 50%;
+}
+nav a {
+  color: #E84545;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+nav a:hover {
+  color: #903749;
+}
+nav li {
+  display: inline-block;
+}
+@media (min-width: 800px) {
+  nav .menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+nav .menu-item-has-children > a:after {
+  font-family: 'Genericons';
+  content: '\f431';
+  padding: 1px;
+}
+nav nav ul ul {
+  display: none;
+}
+@media (min-width: 800px) {
+  nav nav ul ul {
+    display: none;
+    position: absolute;
+  }
+}
+nav nav ul li:hover > ul {
+  display: block;
+  color: #fff;
+  padding-left: 2rem;
+}
+@media (min-width: 800px) {
+  nav nav ul li:hover > ul {
+    padding-left: 0;
+    background: #777;
+  }
+  nav nav ul li:hover > ul a {
+    color: #fff;
+  }
+  nav .sub-menu li {
+    display: flex;
+    padding-right: 2em;
+  }
+  nav .sub-menu li:hover,
+  nav .sub-menu li a:hover {
+    background: #ddd;
+    color: #777;
+  }
+  nav nav ul ul ul {
+    margin: 0 0 0 100%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  }
+  nav .menu-item-has-children .menu-item-has-children > a:after {
+    font-family: 'Genericons';
+    content: '\f431';
+    padding: 1px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  nav #menu-toggle {
+    display: none;
+  }
+  nav .label-toggle {
+    display: none;
+  }
+  nav .wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 768px) {
+  nav nav ul a {
+    color: #53354A;
+  }
+  nav ul {
+    background-color: #E84545;
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: all 1s ease;
+    width: 100%;
+    visibility: hidden;
+  }
+  nav li {
+    border-bottom: 2px solid #53354A;
+    color: #53354A;
+    display: block;
+    font-size: 1.5em;
+    padding: 2em 0;
+  }
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 100vh;
+    visibility: visible;
+  }
+  nav .label-toggle {
+    background: linear-gradient(to bottom, #E84545 0%, #E84545 20%, transparent 20%, transparent 40%, #E84545 40%, #E84545 60%, transparent 60%, transparent 80%, #E84545 80%, #E84545 100%);
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 35px;
+    margin-top: 1em;
+    width: 35px;
+  }
+  nav .wrapper {
+    display: block;
+  }
+}
+
+pre {
+  clear: both;
+  color: white;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 0;
+  -moz-tab-size: 2;
+    -o-tab-size: 2;
+       tab-size: 2;
+  word-break: normal;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  position: relative;
+  line-height: 28px;
+  min-width: 100%;
+}
+pre[rel] {
+  padding-top: 28px;
+}
+pre[rel]::before {
+  font-size: 0.75rem;
+  content: attr(rel);
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #999;
+  padding: 0;
+  text-indent: 15px;
+}
+pre[rel="CSS"]::before {
+  background: #ff9800;
+}
+pre[rel="HTML"]::before {
+  background: #4caf50;
+}
+pre code {
+  font-size: 16px;
+  line-height: 1.75;
+  background: none;
+  padding: 1.5rem;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+  overflow-x: scroll;
+  scrollbars: 0.5em, #666, none;
+}
+
+.language-css {
+  color: #cd6a51;
+}
+.language-css .token.punctuation {
+  color: white;
 }
 
 .containers {
