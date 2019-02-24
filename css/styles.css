@@ -86,13 +86,14 @@ nav li {
   display: inline-block;
 }
 
-/*@media (min-width: 800px) {
+@media (min-width: 800px) {
   nav .menu {
     flex-direction: row;
     justify-content: space-between;
   }
 }
-nav .menu-item-has-children > a:after {
+
+/*nav .menu-item-has-children > a:after {
   font-family: 'Genericons';
   content: '\f431';
   padding: 1px;
