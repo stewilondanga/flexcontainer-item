@@ -28,13 +28,13 @@ ul {
   padding: 0;
 }
 
-/*li {
+li {
   display: block;
   list-style-type: none;
   text-transform: uppercase;
 }
 
-h1 {
+/*h1 {
   font-size: 3em;
   padding: 3em 0 1em 0;
 }
