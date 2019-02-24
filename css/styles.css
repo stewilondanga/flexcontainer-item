@@ -1,4 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+body {
+  background-color: #E84545;
+  color: #53354A;
+  font-family: 'Oswald', sans-serif;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+
 /*body {
   text-align: center;
   font-family: courier;
@@ -20,14 +29,6 @@
 
 .my_social a img {
   height: 1.5em;
-}
-
-body {
-  background-color: #E84545;
-  color: #53354A;
-  font-family: 'Oswald', sans-serif;
-  line-height: 2em;
-  text-transform: uppercase;
 }
 
 ul {
