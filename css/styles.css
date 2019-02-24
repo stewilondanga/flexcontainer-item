@@ -249,10 +249,11 @@ pre[rel="CSS"]::before {
   background: #ff9800;
 }
 
-/*pre[rel="HTML"]::before {
+pre[rel="HTML"]::before {
   background: #4caf50;
 }
-pre code {
+
+/*pre code {
   font-size: 16px;
   line-height: 1.75;
   background: none;
