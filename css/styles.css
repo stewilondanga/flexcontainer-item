@@ -59,13 +59,13 @@ h2 {
   width: 45px;
 }
 
-/*.wrapper {
+.wrapper {
   margin: 0 auto;
   max-width: 960px;
   padding: 0 2%;
 }
 
-nav ul {
+/*nav ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
