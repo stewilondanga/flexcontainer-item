@@ -253,7 +253,7 @@ pre[rel="HTML"]::before {
   background: #4caf50;
 }
 
-/*pre code {
+pre code {
   font-size: 16px;
   line-height: 1.75;
   background: none;
@@ -265,7 +265,7 @@ pre[rel="HTML"]::before {
   scrollbars: 0.5em, #666, none;
 }
 
-.language-css {
+/*.language-css {
   color: #cd6a51;
 }
 .language-css .token.punctuation {
