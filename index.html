@@ -10,123 +10,127 @@
 <body>
 
   <div class="my_social">
-      <a href="https://www.linkedin.com/in/stewart-ilondanga-336b2743/" class="social">
-          <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
-        </a>
-      <a href="https://stewilondanga.github.io/" class="social">
-          <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
-        </a>
-      <a href="https://twitter.com/stew_ilondanga" class="social">
-          <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
-        </a>
-    </div>
+    <a href="https://www.linkedin.com/in/stewart-ilondanga-336b2743/" class="social">
+      <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
+    </a>
+    <a href="https://stewilondanga.github.io/" class="social">
+      <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
+    </a>
+    <a href="https://twitter.com/stew_ilondanga" class="social">
+      <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
+    </a>
+  </div>
 
-    <nav class="navBar">
-      <nav class="wrapper">
-        <div class="logo"></div><!-- Logo -->
-        <input type="checkbox" id="menu-toggle" />
-          <label for="menu-toggle" class="label-toggle"></label>
-            <ul id="main-nav">
-              <li class="menu-item-has-children"><a href="#">Properties for the Parent</a>
-              <ul class="sub-menu">
-                <li><a href="#display">display</a></li>
-                <li><a href="#flex-direction">flex-direction</a></li>
-                <li><a href="#flex-wrap">flex-wrap</a></li>
-                <li><a href="#flex-flow">flex-flow</a></li>
-                <li><a href="#justify-content">justify-content</a></li>
-                <li><a href="#align-items">align-items</a></li>
-                <li><a href="#align-content">align-content</a></li>
-              </ul>
-            </li>
+  <nav class="navBar">
+    <nav class="wrapper">
+      <div class="logo"></div><!-- Logo -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="label-toggle"></label>
+      <ul id="main-nav">
+        <li class="menu-item-has-children"><a href="#">Properties for the Parent</a>
+          <ul class="sub-menu">
+            <li><a href="#display">display</a></li>
+            <li><a href="#flex-direction">flex-direction</a></li>
+            <li><a href="#flex-wrap">flex-wrap</a></li>
+            <li><a href="#flex-flow">flex-flow</a></li>
+            <li><a href="#justify-content">justify-content</a></li>
+            <li><a href="#align-items">align-items</a></li>
+            <li><a href="#align-content">align-content</a></li>
+          </ul>
+        </li>
 
-                <li class="menu-item-has-children"><a href="#">Properties for the Children</a>
-              <ul class="sub-menu">
-                <li><a href="#order" class="nav-links">order</a></li>
-                <li><a href="#flex-grow" class="nav-links">flex-grow</a></li>
-                <li><a href="#flex-shrink" class="nav-links">flex-shrink</a></li>
-                <li><a href="#flex-basis" class="nav-links">flex-basis</a></li>
-                <li><a href="#flex" class="nav-links">flex</a></li>
-                <li><a href="#align-self" class="nav-links">align-self</a></li>
-              </ul>
-            </li>
-            </ul>
-        </nav>
-      </nav>
-     <header class="wrapper">
-      <h1>Properties for the Parent<br />
+        <li class="menu-item-has-children"><a href="#">Properties for the Children</a>
+          <ul class="sub-menu">
+            <li><a href="#order" class="nav-links">order</a></li>
+            <li><a href="#flex-grow" class="nav-links">flex-grow</a></li>
+            <li><a href="#flex-shrink" class="nav-links">flex-shrink</a></li>
+            <li><a href="#flex-basis" class="nav-links">flex-basis</a></li>
+            <li><a href="#flex" class="nav-links">flex</a></li>
+            <li><a href="#align-self" class="nav-links">align-self</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </nav>
+  <header class="wrapper">
+    <h1>Properties for the Parent<br />
       <span>(flex container)</span></h1>
-      <div id="display">
+    <div id="display">
       <h2>display</h2>
-       <p>This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.</p>
-       <pre rel="CSS"><code class="language-css">.container {
+      <p>This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.</p>
+      <pre rel="CSS"><code class="language-css">.container {
       display: flex; /* or inline-flex */
     }</code></pre>
-       Note that CSS columns have no effect on a flex container.
-      </div>
-       <div id="flex-direction">
-       <h2>flex-direction</h2>
-       <p>This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.</p>
-    <pre rel="CSS"><code class="language-css">.container {
+      Note that CSS columns have no effect on a flex container.
+    </div>
+    <div id="flex-direction">
+      <h2>flex-direction</h2>
+      <p>This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in
+        horizontal rows or vertical columns.</p>
+      <pre rel="CSS"><code class="language-css">.container {
       flex-direction: row | row-reverse | column | column-reverse;
     }</code></pre>
-    <ul>
-    <li><code>row</code> (default): left to right in <code>ltr</code>; right to left in <code>rtl</code></li>
-    <li><code>row-reverse</code>: right to left in <code>ltr</code>; left to right in <code>rtl</code></li>
-    <li><code>column</code>: same as <code>row</code> but top to bottom</li>
-    <li><code>column-reverse</code>: same as <code>row-reverse</code> but bottom to top</li>
-    </ul>
+      <ul>
+        <li><code>row</code> (default): left to right in <code>ltr</code>; right to left in <code>rtl</code></li>
+        <li><code>row-reverse</code>: right to left in <code>ltr</code>; left to right in <code>rtl</code></li>
+        <li><code>column</code>: same as <code>row</code> but top to bottom</li>
+        <li><code>column-reverse</code>: same as <code>row-reverse</code> but bottom to top</li>
+      </ul>
     </div>
-     <div id="flex-wrap">
+    <div id="flex-wrap">
       <h2>flex-wrap</h2>
-       <p>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.</p>
-       <pre rel="CSS"><code class="language-css">.container {
+      <p>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.</p>
+      <pre rel="CSS"><code class="language-css">.container {
       flex-wrap: nowrap | wrap | wrap-reverse;
     }</code></pre>
-       <ul>
-    <li><code>nowrap</code> (default): all flex items will be on one line</li>
-    <li><code>wrap</code>: flex items will wrap onto multiple lines, from top to bottom.</li>
-    <li><code>wrap-reverse</code>: flex items will wrap onto multiple lines from bottom to top.</li>
-    </ul>
-      </div>
+      <ul>
+        <li><code>nowrap</code> (default): all flex items will be on one line</li>
+        <li><code>wrap</code>: flex items will wrap onto multiple lines, from top to bottom.</li>
+        <li><code>wrap-reverse</code>: flex items will wrap onto multiple lines from bottom to top.</li>
+      </ul>
+    </div>
     <div id="flex-flow">
       <h2>flex-flow(applies to: parent flex container element)</h2>
-       <p>This is a shorthand <strong>flex-direction</strong> and <strong>flex-wrap </strong>properties, which together define the flex container's main and cross axes. Default is <strong>row nowrap</strong>.</p>
-       <pre rel="CSS"><code class="language-css">
+      <p>This is a shorthand <strong>flex-direction</strong> and <strong>flex-wrap </strong>properties, which together define the flex container's main and cross axes. Default is <strong>row nowrap</strong>.</p>
+      <pre rel="CSS"><code class="language-css">
       flex-flow: <'flex-direction'> || <'flex-wrap'></code></pre>
-       Note that CSS columns have no effect on a flex container.
-      </div>
+      Note that CSS columns have no effect on a flex container.
+    </div>
     <div id="justify-content">
       <h2>justify-content</h2>
-       <p>This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.</p>
-       <pre rel="CSS"><code class="language-css">.container {
+      <p>This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over
+        the alignment of items when they overflow the line.</p>
+      <pre rel="CSS"><code class="language-css">.container {
       justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
     }</code></pre>
-    <ul>
-    <li><code>flex-start</code> (default): items are packed toward the start line</li>
-    <li><code>flex-end</code>: items are packed toward to end line</li>
-    <li><code>center</code>: items are centered along the line</li>
-    <li><code>space-between</code>: items are evenly distributed in the line; first item is on the start line, last item on the end line</li>
-    <li><code>space-around</code>: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.</li>
-    <li><code>space-evenly</code>: items are distributed so that the spacing between any two items (and the space to the edges) is equal.</li>
-    </ul>
-      </div>
-
-
-  <section id="contact">
-    <div class="overlay">
-      <div class="containers">
-
-        <h1>
-<script>
-with(new Date)c=-new Date(y=getFullYear(),m=getMonth()).getDay(x=new Date(y,++m,0).getDate(b=-1))
-h='<table class="cal"><caption> <em>Stewart ilondanga</em> &#169 '+' '+y+'/'+m+'<tr>'+'SuMoTuWeThFrSa'.replace(/(..)/g,'<th>$1')
-while((b++>5?b=0:b)|c<x)h+=(b?'':'<tr>')+'<td>'+(++c<1|c>x?'-':c);document.write(h+'</table>')
-</script>
-</h1>
-
-      </div>
+      <ul>
+        <li><code>flex-start</code> (default): items are packed toward the start line</li>
+        <li><code>flex-end</code>: items are packed toward to end line</li>
+        <li><code>center</code>: items are centered along the line</li>
+        <li><code>space-between</code>: items are evenly distributed in the line; first item is on the start line, last item on the end line</li>
+        <li><code>space-around</code>: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space
+          against the container edge, but two units of space between the next item because that next item has its own spacing that applies.</li>
+        <li><code>space-evenly</code>: items are distributed so that the spacing between any two items (and the space to the edges) is equal.</li>
+      </ul>
     </div>
-  </section>
+
+
+    <section id="contact">
+      <div class="overlay">
+        <div class="containers">
+
+          <h1>
+            <script>
+              with(new Date) c = -new Date(y = getFullYear(), m = getMonth()).getDay(x = new Date(y, ++m, 0).getDate(b = -1))
+              h = '<table class="cal"><caption> <em>Stewart ilondanga</em> &#169 ' + ' ' + y + '/' + m + '<tr>' + 'SuMoTuWeThFrSa'.replace(/(..)/g, '<th>$1')
+              while ((b++ > 5 ? b = 0 : b) | c < x) h += (b ? '' : '<tr>') + '<td>' + (++c < 1 | c > x ? '-' : c);
+              document.write(h + '</table>')
+            </script>
+          </h1>
+
+        </div>
+      </div>
+    </section>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
