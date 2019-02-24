@@ -110,12 +110,13 @@ nav nav ul ul {
   }
 }
 
-/*nav nav ul li:hover > ul {
+nav nav ul li:hover>ul {
   display: block;
   color: #fff;
   padding-left: 2rem;
 }
-@media (min-width: 800px) {
+
+/*@media (min-width: 800px) {
   nav nav ul li:hover > ul {
     padding-left: 0;
     background: #777;
