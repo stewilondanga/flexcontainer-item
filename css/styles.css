@@ -82,10 +82,11 @@ nav a:hover {
   color: #903749;
 }
 
-/*nav li {
+nav li {
   display: inline-block;
 }
-@media (min-width: 800px) {
+
+/*@media (min-width: 800px) {
   nav .menu {
     flex-direction: row;
     justify-content: space-between;
