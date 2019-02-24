@@ -265,10 +265,11 @@ pre code {
   scrollbars: 0.5em, #666, none;
 }
 
-/*.language-css {
+.language-css {
   color: #cd6a51;
 }
-.language-css .token.punctuation {
+
+/*.language-css .token.punctuation {
   color: white;
 }
 
